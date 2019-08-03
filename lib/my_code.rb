@@ -29,13 +29,12 @@ map([1, 2, 3, -9]) {|n| n **2}
 # end
 
 
-def reduce(array, value = false)
-    
-   if (value < 0)
-    acc = array[0]
-   else
+def reduce(array, value=nil)
+
+  if value
     acc = value
-   end
+  end
+
    
   array.each do |i| { acc = yield(array[i], acc) }
   acc
