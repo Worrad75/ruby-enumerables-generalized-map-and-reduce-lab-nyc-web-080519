@@ -33,15 +33,21 @@ def reduce(array, value=nil)
 
   if value
     acc = value
+    i = 0
+  else
+    acc = array[0]
+    i = 1
   end
-
-   
-  array.each do |i| { acc = yield(array[i], acc) }
+  
+  while i < array.length
+   acc = yield(acc, array[i])
+    i += 1
+  end
   acc
+  
 end
 
-
-reduce([1, 2, 3, -9], 0) { |ele, total| total = ele + total}
+reduce([1, 2, 3, -9], 0) { |total, ele| total = ele + total}
     
 
 
