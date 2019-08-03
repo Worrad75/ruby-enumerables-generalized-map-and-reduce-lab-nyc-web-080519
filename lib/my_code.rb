@@ -29,9 +29,7 @@ map([1, 2, 3, -9]) {|n| n **2}
 # end
 
 
-
-
-def reduce(array, value = 0)
+def reduce(array, value = false)
     
    if (value < 0)
     acc = array[0]
