@@ -42,12 +42,12 @@ def reduce(array, value = 0) {
    return acc
   }
   
-# else
-#   array.each do {
-#     acc = yield(acc)
-#   }
-#   return acc
-# end
+else
+  array.each do {
+    acc = yield(acc)
+  }
+  return acc
+end
 end
 
 
