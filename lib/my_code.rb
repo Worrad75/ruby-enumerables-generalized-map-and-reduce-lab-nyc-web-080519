@@ -39,8 +39,6 @@ def reduce(array, value = 0)
 end
 
 
-
-
 reduce([1, 2, 3, -9], 0) { |ele, total| total = ele + total}
     
 
