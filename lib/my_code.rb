@@ -40,9 +40,8 @@ def reduce(array, value = 0) {
     acc = yield(array[i], acc)
    }
    return acc
-  }
-  
-else
+   
+  else
   array.each do {
     acc = yield(acc)
   }
