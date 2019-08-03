@@ -1,3 +1,4 @@
+
 def map(array)
   
   new_arr = []
@@ -26,8 +27,6 @@ def reduce(array, value=nil)
   acc
   
 end
-
-reduce([1, 2, 3, -9], 0) { |total, ele| total = ele + total}
     
 
 
