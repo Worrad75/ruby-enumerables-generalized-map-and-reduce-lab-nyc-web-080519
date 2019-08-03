@@ -36,7 +36,7 @@ def reduce(array, value = 0)
    
   array.each do |i| { acc = yield(array[i], acc) }
   acc
-   
+end
 
 
 
