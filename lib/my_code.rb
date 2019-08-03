@@ -8,26 +8,6 @@ def map(array)
 end
 
 
-map([1, 2, 3, -9]) {|n| n *-1}
-map([1, 2, 3, -9]) {|n| n}
-map([1, 2, 3, -9]) {|n| n*2}
-map([1, 2, 3, -9]) {|n| n **2}
-
-
-
-
-
-
-
-
-# def reduce(array, value*)
-  
-#   array.each do |ele|
-#     yield(ele, value)
-#   end
-#   value
-# end
-
 
 def reduce(array, value=nil)
 
