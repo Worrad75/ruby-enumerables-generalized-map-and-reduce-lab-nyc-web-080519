@@ -15,6 +15,11 @@ map([1, 2, 3, -9]) {|n| n **2}
 
 
 
+
+
+
+
+
 # def reduce(array, value*)
   
 #   array.each do |ele|
